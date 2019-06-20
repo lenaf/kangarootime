@@ -1,5 +1,5 @@
 import { createMuiTheme } from "@material-ui/core/styles";
-import { dimensions} from './constants';
+import { dimensions, colors} from './constants';
 
 export default createMuiTheme({
   overrides: {
@@ -28,6 +28,16 @@ export default createMuiTheme({
       root: {
         color: 'inherit',
         'min-width': 30 
+      }
+    },
+    MuiInputBase:{
+      fullWidth: true,
+      input: {
+        padding: 10,
+        background: colors.paleGrey,
+        'border-radius': 4,
+        margin: 5,
+        'flex-grow': 1,
       }
     }
   }

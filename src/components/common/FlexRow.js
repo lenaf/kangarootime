@@ -4,6 +4,9 @@ export default styled.div`
   display : flex;
   flex-direction: row;
   flex: 1 1 auto;
-  text-align: center;
+  text-align: left;
+  align-items: flex-start;
+  margin: 5px;
   align-items: center;
+  flex-wrap: wrap;
 `;

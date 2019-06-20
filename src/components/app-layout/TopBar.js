@@ -15,13 +15,8 @@ const useStyles = makeStyles(theme => ({
     color: colors.charcoalGrey,
     paddingLeft: 16,
     paddingRight: 16,
-    flexDirection: 'row'
-  },
-  search: {
-    borderRadius: 10,
-    display: 'flex',
-    background: colors.paleGrey,
-    flexGrow: 0
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   account: {
     flexGrow: 0
@@ -33,10 +28,8 @@ function TopBar (){
   
   return (
     <AppBar className={classes.appBar} position="fixed">
-        <FlexRow className={classes.search}>
-          <InputBase placeholder="Search…"/>
-        </FlexRow>
-        <FlexRow/>
+        <InputBase placeholder="Search…"/>
+        <FlexRow />
         <FlexRow className={classes.account}>
           <div>John Doe</div>
           <ListItemIcon><Face/></ListItemIcon>

@@ -30,7 +30,7 @@ function SideBar () {
           <ListItemIcon><Home/></ListItemIcon>
           <ListItemText>KangarooTime</ListItemText>
         </ListItem>
-        <StyledLink>
+        <StyledLink to="/">
           <MenuItem>
             <ListItemIcon><Home/></ListItemIcon>
             <ListItemText>Home</ListItemText>
